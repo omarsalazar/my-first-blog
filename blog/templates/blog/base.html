@@ -9,17 +9,17 @@
         <title>Django blog</title>
         <style media="screen">
             .letra{
-                font-family: 'Muli', sans-serif;
+                text-align: justify;
             }
         </style>
     </head>
     <body>
       <div class="page-header">
           <a href="{% url 'bloc:post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-          <h1><a href="/" class="letra">Django Blog</a></h1>
+          <h1><a href="/">Django Blog</a></h1>
       </div>
       <div class="content container">
-          <div class="row">
+          <div class="row letra">
               <div class="col-md-8">
               {% block content %}
               {% endblock %}
